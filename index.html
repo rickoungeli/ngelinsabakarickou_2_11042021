@@ -2,8 +2,11 @@
 <html  lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/daa2a72b15.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
     <title>Trouvez votre hébergement pour des vacances de rêve</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -23,13 +26,23 @@
         <section id="bandeau">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div id="searchzone">
+            <!-- Zone de recherche-->
+            <aside id="searchzone">
                 <form action="#" method="POST">
-                    <label for="ville"></label>
+                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+                    
                     <input type="text" name="ville" id="ville" value="Marseille, France" placeholder="Tapez une Ville" />
                     <input type="submit" value="Rechercher"/>
                 </form>
-            </div>
+            </aside>
+            <!-- Filtres-->
+            <aside id="filtres">
+                <p>Filtres</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </aside>
         </section>
         <section id="hebergements">
             <aside>
