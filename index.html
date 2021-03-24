@@ -11,53 +11,268 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
-        <header>
-            <aside id="logo">
-                <img src="images/logo/Reservia.svg" alt="logo Reservia" />
-            </aside>
-            <nav>
-                <ul>
-                    <li><a href="#hebergements">Hébergements</a></li>
-                    <li><a href="#activites">Activités</a></li>
-                    <li>S'inscrire</li>
-                </ul>
-            </nav>
-        </header>
-        <section id="bandeau">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <!-- Zone de recherche-->
-            <aside id="searchzone">
-                <form action="#" method="POST">
-                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-                    
-                    <input type="text" name="ville" id="ville" value="Marseille, France" placeholder="Tapez une Ville" />
-                    <input type="submit" value="Rechercher"/>
-                </form>
-            </aside>
-            <!-- Filtres-->
-            <aside id="filtres">
-                <p>Filtres</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </aside>
-        </section>
-        <section id="hebergements">
-            <aside>
-               
-                
-            </aside>
-            <aside>
-                
-            </aside>
-        </section>
-        <section id="activites">
-            
-        </section>
-        <footer>
-            
-        </footer>
+        <div id="conteneur">
+            <header>
+                <aside id="logo">
+                    <img src="images/logo/Reservia.svg" alt="logo Reservia" />
+                </aside>
+                <nav>
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                        <li>S'inscrire</li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="bandeau">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <!-- Zone de recherche-->
+                <aside id="searchzone">
+                    <form action="#" method="POST">
+                        <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+                        
+                        <input type="text" name="ville" id="ville" value="Marseille, France" placeholder="Tapez une Ville" />
+                        <input type="submit" value="Rechercher"/>
+                    </form>
+                </aside>
+                <!-- Filtres-->
+                <aside id="filtre" class="flex">
+                    <p>Filtres</p>
+                    <div class="filtres"><span><i class="fas fa-money-bill-wave"></i></span>Economique</div>
+                    <div class="filtres"><span><i class="fas fa-child"></i></span>Familial</div>
+                    <div class="filtres"><span><i class="fas fa-heart"></i></span>Romantique</div>
+                    <div class="filtres"><span><i class="fas fa-dog"></i></span>Animaux autorisés</div>
+                </aside>
+                <p><span><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
+            <!-- Section Hébergements-->
+            <section id="section_hebergement" class="flex">
+                <!--Sous-section hébergement à Marseille-->
+                <aside class="hebergement" id="marseille">
+                    <h2>Hébergements à Marseille</h2>
+                    <div class="flex">
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </aside>
+                <!--Sous-section hébergements populaires-->
+                <aside class="hebergement" id="populaire">
+                    <h2>Hébergements populaires</h2>
+                    <div class="flex">
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <!-- Section Activités-->
+            <section id="activites_marseille">
+                <aside class="hebergement" id="activites">
+                    <h2>Activités à Marseille</h2>
+                    <div class="flex">
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="images"/>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <footer>
+                <aside>
+                    <h3>A propos</h3>
+                    <p>
+                        <a href="#">Fonctionnement du site</a>
+                        <a href="#">Conditions générale de vente</a>
+                        <a href="#">Données et confidentialité</a>
+                    </p>
+                </aside>
+                <aside>
+                    <h3>Nos hébergements</h3>
+                    <p>
+                        <a href="#">Charte qualité</a>
+                        <a href="#">Soumettre votre hôtel</a>
+                    </p>
+                </aside>
+                <aside>
+                    <h3>Assistance</h3>
+                    <p>
+                        <a href="#">Centre d'aide</a>
+                        <a href="#">Nous contacter</a>
+                    </p>
+                </aside>
+            </footer>
+        </div>
     </body>
 </html>
