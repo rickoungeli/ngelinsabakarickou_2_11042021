@@ -1,21 +1,97 @@
-/* Police spécial */
-
-
-/* Eléments principaux de la page */
-
-
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #181818;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+#conteneur{
+    width: 980px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+h1{
+    font-size: 1.4em;
+    
+}
+.reservia_flex{
+    display: flex;
+}
 /* Header */
-
-
-/* Navigation */
-
-
+header{
+    justify-content:space-between;
+    padding: 30px 30px 20px 30px;
+}
+#logo img{
+    width: 65px;
+}
+    /* Navigation */
+    nav{
+        width: 29%;
+    } 
+    nav ul{
+        display: flex;
+        justify-content:space-between;
+        list-style-type: none;
+    }
+    nav a {
+        color: #0065FC;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover{
+        
+    }
 /* Bandeau */
+#bandeau{
+    padding: 0 30px ;
+}
+#bandeau p{
+    padding: 8px 0 ;
+}
+input{
+    
+    height: 30px;
+}
+#icone_localisation{
+    text-align: center;
+    padding-top: 10px;
+    background-color: #f2f2f2;
+    width: 30px;
+    border-radius: 10px 0 0 10px;
+}
 
+#filtre{
+    
+}
 
 
 
 /* Corps */
-
+aside{
+    
+}
+.hebergement{
+    background-color: #f2f2f2;
+    
+    
+}
+.images{
+    max-width: 180px;
+}
+#section_hebergement{
+    justify-content: space-around;
+}
+#marseille{
+    max-width: 60%;
+    
+}
+#populaire{
+    max-width: 30%;
+    
+}
 
 /* Footer */

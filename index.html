@@ -12,33 +12,39 @@
 </head>
     <body>
         <div id="conteneur">
-            <header>
+            <header class="reservia_flex">
                 <aside id="logo">
-                    <img src="images/logo/Reservia.svg" alt="logo Reservia" />
+                    <img src="images/logo/Reservia@3x.png" alt="logo Reservia" />
                 </aside>
                 <nav>
                     <ul>
                         <li><a href="#hebergements">Hébergements</a></li>
                         <li><a href="#activites">Activités</a></li>
-                        <li>S'inscrire</li>
+                        <li><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
             </header>
+
+
+
+
             <section id="bandeau">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <!-- Zone de recherche-->
-                <aside id="searchzone">
-                    <form action="#" method="POST">
-                        <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
-                        
-                        <input type="text" name="ville" id="ville" value="Marseille, France" placeholder="Tapez une Ville" />
+                <aside  id="searchzone">
+                    <form class="reservia_flex" action="#" method="POST">
+                        <span id="icone_localisation"><label for="ville"><i class="fas fa-map-marker-alt"></i></label></span>
+                        <input type="text" name="ville" id="ville" value="Marseille, France" />
                         <input type="submit" value="Rechercher"/>
                     </form>
                 </aside>
+
+
+
                 <!-- Filtres-->
-                <aside id="filtre" class="flex">
-                    <p>Filtres</p>
+                <aside class="reservia_flex" id="filtre">
+                    <h3>Filtres</h3>
                     <div class="filtres"><span><i class="fas fa-money-bill-wave"></i></span>Economique</div>
                     <div class="filtres"><span><i class="fas fa-child"></i></span>Familial</div>
                     <div class="filtres"><span><i class="fas fa-heart"></i></span>Romantique</div>
@@ -47,7 +53,7 @@
                 <p><span><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
             <!-- Section Hébergements-->
-            <section id="section_hebergement" class="flex">
+            <section class="reservia_flex" id="section_hebergement">
                 <!--Sous-section hébergement à Marseille-->
                 <aside class="hebergement" id="marseille">
                     <h2>Hébergements à Marseille</h2>
