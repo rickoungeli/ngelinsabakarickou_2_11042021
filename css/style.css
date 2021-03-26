@@ -1,21 +1,25 @@
+/* Géréral */
 * {
     margin: 0 0;
     padding: 0 0;
 }
-body {
+html {
     font-family: 'Raleway', Arial, sans-serif;
     color: #181818;
     font-size: 0.7em;
     font-weight: bold;
 }
-#conteneur{
+body{
     width: 980px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 h1{
     font-size: 1.4em;
-    
+    font-weight: bold;
+}
+.perso_police1{
+    font-size: 1.4em;
+    font-weight: bold;
 }
 .reservia_flex{
     display: flex;
@@ -23,14 +27,15 @@ h1{
 /* Header */
 header{
     justify-content:space-between;
-    padding: 30px 30px 20px 30px;
+    margin-top: 30px;
 }
 #logo img{
     width: 65px;
 }
     /* Navigation */
     nav{
-        width: 29%;
+        align-items: center;
+        width: 28%;
     } 
     nav ul{
         display: flex;
@@ -47,14 +52,24 @@ header{
     }
 /* Bandeau */
 #bandeau{
-    padding: 0 30px ;
+    margin-top: 20px ;
 }
 #bandeau p{
-    padding: 8px 0 ;
+    margin-top: 5px ;
+}
+#searchzone{
+    margin-top: 15px;
 }
 input{
-    
     height: 30px;
+}
+#ville{border: 1px solid #f2f2f2;}
+#searchbtn{
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0 10px 10px 0;
+    width: 90px;
+    color: #fff;
 }
 #icone_localisation{
     text-align: center;
@@ -65,10 +80,21 @@ input{
 }
 
 #filtre{
-    
+    margin-top: 20px;
 }
-
-
+.filtres{
+    margin: 0 10px ;
+    padding: 10px 20px 10px 0 ;
+    border: 2px solid #f2f2f2FC;
+    border-radius: 18px 18px;
+}
+.icone_filtre{
+    padding: 10px 10px ;
+    background-color:#deebff ;
+    color: #0065FC;
+    border-radius: 18px 18px;
+    margin-right: 10px;
+}
 
 /* Corps */
 aside{
