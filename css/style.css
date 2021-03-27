@@ -1,123 +1,147 @@
-/* Géréral */
+/* Eléments généraux */
 * {
-    margin: 0 0;
-    padding: 0 0;
-}
-html {
-    font-family: 'Raleway', Arial, sans-serif;
-    color: #181818;
-    font-size: 0.7em;
-    font-weight: bold;
+    margin: 0;
 }
 body{
-    width: 980px;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: black;
+    width: 80%;
     margin: 0 auto;
+    font-size: 0.6em;
 }
-h1{
-    font-size: 1.4em;
-    font-weight: bold;
+section{
+    padding: 27px 38px 0 38px ;
+    box-sizing: border-box;
+    font-family: inherit;
 }
-.perso_police1{
-    font-size: 1.4em;
-    font-weight: bold;
-}
-.reservia_flex{
+img{width: 100%; /* Les img doivent s'adapter à la taille de leurs parents */}
+
+h1{font-size: 1.7em;}
+h2{font-size: 1.4em;}
+h3{font-size: 1.2em}
+
+/* Eléments personnels */
+.flex{
     display: flex;
+    justify-content:space-between;
+}
+.perso-color1 {color: #0065FC;}
+.perso-color2 {color: #deebff;}
+.perso-color3 {color: #f2f2f2FC;}
+.style1{
+    padding-top: 7px;
+    font-size: 1.2em;
+    font-weight: normal;
 }
 /* Header */
 header{
     justify-content:space-between;
-    margin-top: 30px;
+    padding: 34px 38px 0 38px;
+    box-sizing: border-box;
 }
-#logo img{
-    width: 65px;
+#logo {
+    max-width: 7.1%;
+    min-width: 60px;
+    margin-left: 5px;
 }
-    /* Navigation */
-    nav{
-        align-items: center;
-        width: 28%;
-    } 
-    nav ul{
-        display: flex;
-        justify-content:space-between;
-        list-style-type: none;
-    }
-    nav a {
-        color: #0065FC;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    nav a:hover{
-        
-    }
-/* Bandeau */
-#bandeau{
-    margin-top: 20px ;
+/* Navigation */
+.menu{
+    align-items: center;
+    width: 32.4%;
+    margin-right: 22px;
+} 
+.menu ul{
+    list-style: none;
 }
-#bandeau p{
-    margin-top: 5px ;
+.menu ul li:first-child{
+    margin: -35px 0 0 0;
+    padding: 33px 0 0 0;
+    border-top: 2px solid #0065FC;;
 }
-#searchzone{
-    margin-top: 15px;
+.menu ul li:nth-child(2) a{
+    color:black;
 }
-input{
-    height: 30px;
+.menu a {
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bold;
 }
-#ville{border: 1px solid #f2f2f2;}
+/* Zone de recherche */
+form{
+    font-family: inherit;
+    font-size: 1.3em;
+    padding-top: 7px;
+}
+#icone-localisation{
+    padding: 12px 15px;
+    border-radius: 10px 0 0 10px ;
+    background-color: #f2f2f2FC;
+}
+#ville, #searchbtn{
+    padding: 12px 10px;
+    border: 1px solid #f2f2f2FC;
+    margin-left: -5px;
+}
 #searchbtn{
+    color:white;
     background-color: #0065FC;
-    border: 1px solid #0065FC;
     border-radius: 0 10px 10px 0;
-    width: 90px;
-    color: #fff;
-}
-#icone_localisation{
-    text-align: center;
-    padding-top: 10px;
-    background-color: #f2f2f2;
-    width: 30px;
-    border-radius: 10px 0 0 10px;
 }
 
-#filtre{
-    margin-top: 20px;
-}
+/* Filtres */
 .filtres{
-    margin: 0 10px ;
-    padding: 10px 20px 10px 0 ;
+    align-items: center;
+    margin-right: 20px;
+    padding-right: 17px;
     border: 2px solid #f2f2f2FC;
     border-radius: 18px 18px;
 }
+#bloc-filtre{
+    justify-content:left ;
+    flex-wrap: nowrap;
+    margin: 20px 0 23px 0; 
+
+}
 .icone_filtre{
-    padding: 10px 10px ;
+    padding: 10px ;
     background-color:#deebff ;
     color: #0065FC;
     border-radius: 18px 18px;
     margin-right: 10px;
 }
+#icone1{
+    padding: 3px 8px;
+    margin-right: 10px;
+}
 
 /* Corps */
-aside{
-    
-}
-.hebergement{
-    background-color: #f2f2f2;
-    
-    
-}
-.images{
-    max-width: 180px;
-}
-#section_hebergement{
-    justify-content: space-around;
-}
-#marseille{
-    max-width: 60%;
-    
-}
-#populaire{
-    max-width: 30%;
-    
+.sous_section_hebergement{
+    background-color:  #f2f2f2FC;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-/* Footer */
+#marseille{
+    flex-basis: 65.8%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+#populaire{
+    flex-basis: 31.2%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.group-element1, .group-element3{
+    flex-wrap: wrap;
+}
+.element1{
+    flex-basis: 30%;
+    margin-top: 20px;
+}
+.element1 img{
+    border-radius: 10px 10px 0 0;
+}
+.element3{
+    flex-basis: 23%;
+}
