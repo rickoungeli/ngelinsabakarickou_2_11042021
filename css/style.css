@@ -1,6 +1,7 @@
 /* Eléments généraux */
 * {
     margin: 0;
+    letter-spacing: 0.028em;
 }
 body{
     font-family: 'Raleway', Arial, sans-serif;
@@ -8,34 +9,25 @@ body{
     width: 1080px;
     margin: 0 auto;
 }
-section{
-    display: flex;
-    justify-content:space-between;
-    padding: 27px 38px 0 38px ;
-    box-sizing: border-box;
-}
-#section1{
-    flex-direction: column;
-}
-img{width: 100%; /* Les img doivent s'adapter à la taille de leurs parents */}
 h1, h2, h3 {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     font-weight: bold;
 }
-/* Taille des polices */
-h1{
-    font-size: 1em;
-    margin-top: -2px;
-}
+h1{font-size: 1em;}
 h2{font-size: 0.8em;}
 h3{font-size: 0.8em}
 p{
     font-size: 0.7em;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     padding-top: 7px;
+    font-weight: 200;
 }
-a{font-size: 0.9em;}
-
+a {
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+}
 /* Mes Classes */
 
 .flex{
@@ -58,67 +50,68 @@ header{
     justify-content:space-between;
     padding: 34px 38px 0 38px;
     box-sizing: border-box;
+    margin-left:2px;
 }
 #logo {
     max-width: 7.1%;
     min-width: 60px;
 }
+#logo img{width: 100%;}
+
 /* Navigation */
-nav{
-    margin-right: -25px;
-} 
-    nav ul{
-        display: flex;
-        justify-content:left;
-        list-style: none;
-    }
-    nav ul li{
-        padding: 35px 30px 0 30px;
-        margin: -34px 0 0 0;
-        font-weight: normal;
-    }
-    nav ul li:hover{
-        border-top: 2px solid #0065FC;
-    }
-    navu ul li:nth-child(2) a{
-        color:black;
-    }
-    nav a {
-        text-decoration: none;
-        font-weight: bold;
-    }
-    nav a:hover {
-        color: #0065FC;
-    }
-    nav a:visited {
-        color: #0065FC;
-    }
+nav ul{
+    display: flex;
+    justify-content:left;
+    list-style: none;
+}
+nav ul li{
+    padding: 35px 25px 0 25px;
+    margin: -34px 0 0 0;
+    font-weight: normal;
+}
+nav ul li:hover{
+    border-top: 2px solid #0065FC;
+}
+navu ul li:nth-child(2) a{
+    color:black;
+}
+nav a:hover {
+    color: #0065FC;
+}
+nav a:visited {
+    color: #0065FC;
+}
+
 /* Zone de recherche */
 form{
-    padding-top: 7px;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 input{
     font-family: inherit;
-    font-weight:700;
-}
-#icone-localisation{
-    padding: 12px 15px;
-    border-radius: 10px 0 0 10px ;
-    display: inline-block;
-}
-#ville, #searchbtn, #searchbtn1 {
-    padding: 12px 10px;
+    font-weight: 700;
+    padding: 11px 12px;
     border: 1px solid #f2f2f2FC;
     margin-left: -5px;
 }
+label{
+    font-size: 0.8em;
+}
+#icone-localisation{
+    padding: 12px 15px;
+    border-radius: 15px 0 0 15px ;
+    display: inline-block;
+}
 #searchbtn{
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
+    font-weight: 200;
 }
 #searchbtn1{
     padding: 12px 6px;
     border-radius: 14px;
     display: none;
     margin-left: -10px;
+    font-weight: 200;
 }
 #searchbtn1 span{
     margin: 0;
@@ -141,15 +134,16 @@ input{
 }
 .filtres{
     align-items: center;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
     padding-right: 17px;
-    border: 2px solid #f2f2f2FC;
-    border-radius: 18px 18px;
+    border: 3px solid #f2f2f2FC;
+    border-radius: 22px;
 }
 .icone-filtre{
-    padding: 10px ;
+    padding: 10px 12px ;
     border-radius: 18px 18px;
     margin-right: 10px;
+    font-size: 0.8em;
 }
 #icone-info{
     padding: 3px 7px;
@@ -157,6 +151,16 @@ input{
 }
 
 /* Sections */
+section{
+    display: flex;
+    justify-content:space-between;
+    padding: 24px 38px 0 38px ;
+    box-sizing: border-box;
+}
+#section1{
+    flex-direction: column;
+    padding-left: 40px;
+}
 .sous-section-hebergements{
     background-color: #f2f2f2FC;
     border-radius: 15px;
@@ -179,10 +183,10 @@ input{
         justify-content:space-between;
         margin-bottom: 28px;
     }
-        .group-hebergements1 figure{
+        .group-hebergements1 a{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             width: 31%;
             margin-top: 20px;
             padding-top: 4px;
@@ -196,6 +200,7 @@ input{
             border-radius: 10px; 
             max-height: 100px;
             position: relative;
+            width: 96%;
         }
         .group-hebergements1 figcaption{
             display: flex;
@@ -210,7 +215,7 @@ input{
         }
         .group-hebergements1 figcaption span{
             margin-top: 5px;
-            font-size: 0.8em;
+            font-size: 0.5em;
         }
     .group-hebergements2{
         display: flex;
@@ -218,7 +223,7 @@ input{
         justify-content: space-between;
         
     }
-    .group-hebergements2 figure{
+    .group-hebergements2 a{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -229,124 +234,133 @@ input{
         text-align: left;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
-        .group-hebergements2 img{
-            width: 48%;    
-            margin: 0 auto;
-            border-radius: 18px; 
-            max-height: 110px;
-            padding: 4px;
-            box-sizing: border-box;
-        }
-        .group-hebergements2 figcaption{
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            margin-left: -25px;
-            padding: 12px 15px;
-            border-radius: 0 10px 10px 0;
-            background-color: white;
-            width: 68%;
-            box-sizing: border-box;
-        }
-        .group-hebergements2 figcaption span{
-            margin-top: 30px;
-            font-size: 0.8em;
-        }
+    .group-hebergements2 img{
+        width: 48%;    
+        margin: 0 auto;
+        border-radius: 18px; 
+        max-height: 110px;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+    .group-hebergements2 figcaption{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: -25px;
+        padding: 11px 15px;
+        border-radius: 0 10px 10px 0;
+        background-color: white;
+        width: 68%;
+        box-sizing: border-box;
+    }
+    .group-hebergements2 figcaption span{
+        margin-top: 30px;
+        font-size: 0.5em;
+    }
 
 #section-activites{
     margin-top: 15px;
     flex-direction: column;
 }
 #section-activites aside{
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 300px;
-        padding-top: 30px;
-    }
-    #section-activites aside div{
-        display: flex;
-        align-items: flex-end;
-        width: 22%;
-        border-radius: 13px;
-        background-position: center center;
-        box-shadow: 0 0 5px rgba(136, 89, 89, 0.2);
-        position:relative;
-    }
-    #section-activites aside p{
-        background-color: white;
-        border-radius: 0 0 13px 13px;
-        padding: 10px;
-        position: absolute;
-        width: 100%;
-        font-weight: bold;
-    }
-    #section-activites aside div:first-child img {
-        width: 140%;
-        height: 100%;
-    }
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    height: 335px;
+    margin-top: 15px;
+}
+#section-activites aside a{
+    display: flex;
+    align-items: flex-end;
+    width: 22.5%;
+    margin-right: 35px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+#section-activites aside p{
+    background-color: white;
+    border-radius: 0 0 13px 13px;
+    padding: 15px 10px;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    overflow: hidden;
+}
+#section-activites aside a img {
+    width: 160%;
+    height: 100%;
+    position: relative;
+}
+#section-activites aside a:first-child {
+    height: 100%;
+}
+#section-activites a:nth-child(2) {
+    height: 50%;
+}
+#section-activites a:nth-child(3) {
+    height: 40%;
+}
+#section-activites a:nth-child(4) {
+    height: 100%;
+}
+#section-activites a:nth-child(5) {
+    height: 45%;
+}
+#section-activites a:nth-child(6) {
+    height: 45%;
+}
+/* Traitement des images de la section 3 */
+#section-activites aside a:nth-child(1) img {
+    top:-10px;
+    right:105px;
+    width: 200%;
+}
+#section-activites aside a:nth-child(4) img {
+    top:-10px;
+    left:-120px;
+    width: 200%;
+    filter:brightness(130%) saturate(70%);
+}
 
-    #section-activites aside div:first-child {
-        overflow: hidden;
-        height: 100%;
-        position: relative;
-        
-    }
-    #section-activites div:nth-child(2) {
-        background-image: url('../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-        height: 50%;
-    }
-    #section-activites div:nth-child(3) {
-        background-image: url('../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-        height: 40%;
-    }
-    #section-activites div:nth-child(4) {
-        background-image: url('../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-        height: 100%;
-    }
-    #section-activites div:nth-child(5) {
-        background-image: url('../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-        height: 45%;
-    }
-    #section-activites div:nth-child(6) {
-        background-image: url('../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-        height: 45%;
-        vertical-align: baseline;
-    }
-    footer{
-        
-        background-color: #f2f2f2FC;
-        margin-top: 34px;
-        padding: 30px;
-    }
-    footer p{
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    footer a{
-        padding-top: 14px;
-        text-decoration: none;
-        color:black;
-        
-    }
-@media(max-width: 1035px){
+/* Footer */
+footer{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);;
+    background-color: #f2f2f2FC;
+    margin-top: 45px;
+    padding: 35px;
+}
+footer p{
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+}
+footer a{
+    padding-top: 14px;
+    text-decoration: none;
+    color:black;
+    
+}
+@media(max-width: 1060px){
     body{
         width: 100%;
     }
     section{
-        padding: 27px 0 0 0 ;
+        padding: 27px 0 0 27px ;
         justify-content: space-around;
-    
     }
-    #section1, #section-activites{
-        padding-left: 27px;
+    .sous-section-hebergements{
+        padding:25px;
     }
 }
-@media(max-width: 850px){
+@media(max-width: 880px){
     section{
         padding: 0 ;
     }
-    .sous-section-hebergements{
-        padding:0;
+    #section1{
+        margin-top:20px;
     }
     #section-hebergements{
         flex-direction: column-reverse;
@@ -360,16 +374,27 @@ input{
     #marseille{
         margin-top:15px;
     }
+    .group-hebergements1 img{ 
+        max-height: 120px;
+    }
+    
     .group-hebergements2{
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .group-hebergements2 figure{
-        width: 31%;
+    .group-hebergements2 a{
+        width: 256px;
+        max-height: 110px;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    a {
+        font-size: 0.9em;
     }
 }
+
 @media(max-width: 730px){
-    body{min-width: 300px}
     .filtre{
         flex-direction: column;
         justify-content: flex-start;
@@ -382,7 +407,11 @@ input{
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .sous-section-hebergements figure{
+    .group-hebergements2 img{ 
+        height: 150%;
+        max-height: 150px;
+    }
+    .sous-section-hebergements a{
         width: 100%;
     }
     #titre-filtre{margin-bottom: 5px;}
@@ -394,6 +423,12 @@ input{
         margin: 5px;
         min-width: 30px;
     }
+    p{
+        font-size: 0.8em;
+    }
+    a {
+        font-size: 0.8em;
+    }
 }
 @media(max-width: 367px){
     #searchbtn{
@@ -402,3 +437,4 @@ input{
     #searchbtn1{
         display:inline;
     }
+}
