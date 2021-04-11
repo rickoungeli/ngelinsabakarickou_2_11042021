@@ -1,4 +1,5 @@
-/* Eléments généraux */
+
+/* general elements */
 * {
     margin: 0;
     letter-spacing: 0.028em;
@@ -19,9 +20,15 @@ h1{font-size: 1em;}
 h2{font-size: 1em;}
 h3{font-size: 0.9em}
 p{
-    font-size: 0.9em;
     padding-top: 7px;
     font-weight: 300;
+}
+#section1 p{
+    font-size: 0.7em;
+}
+#section1 {
+    font-size: 0.9em;
+    font-weight: 700;
 }
 a {
     text-decoration: none;
@@ -29,12 +36,9 @@ a {
     font-size: 0.7em;
 }
 
-/* Mes Classes */
-
+/* Mes couleurs */
 .perso-couleur1 {color: #0065FC;}
-.perso-couleur2 {color: #deebff;}
-.perso-couleur3 {color: #f2f2f2FC;}
-.perso-couleur4 {color: white;}
+.perso-couleur2 {color: #f2f2f2FC;}
 
 /* Header */
 header{
@@ -73,7 +77,7 @@ nav a:visited {
     color: #0065FC;
 }
 
-/* Zone de recherche */
+/* Formulaire de recherche */
 form{
     display: flex;
     flex-wrap: nowrap;
@@ -133,22 +137,27 @@ label{
     display: flex;
     justify-content:left ;
     flex-wrap: wrap;
-    
 }
-.filtres{
+.bloc-icones-filtre button{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin: 0 20px 0 0;
-    padding-right: 17px;
+    padding: 8px 17px 8px 0;
     border: 3px solid #f2f2f2FC;
     border-radius: 22px;
+    background-color: white;
+}
+.bloc-icones-filtre button:hover{
+    border-color: #deebff;
 }
 .icone-filtre{
-    padding: 10px 12px ;
+    padding: 12px ;
     border-radius: 18px 18px;
-    margin-right: 10px;
-    font-size: 0.8em;
+    margin: -10px 10px -10px -10px;
+    font-size: 0.9em;
     color: #0065FC;
+    background-color: #deebff;
 }
 #icone-info{
     padding: 3px 7px;
@@ -159,6 +168,8 @@ label{
 .icone-filtre i, #icone-info i{
     color: #0065FC;
 }
+
+
 /* Sections */
 section{
     display: flex;
@@ -168,9 +179,6 @@ section{
 #section1{
     flex-direction: column;
     padding-left: 40px;
-}
-#section1 p, #section1 p i {
-    font-size: 0.7em;
 }
 .sous-section2-hebergements{
     background-color: #f2f2f2FC;
@@ -187,48 +195,38 @@ section{
         display:flex;
         justify-content: space-between;
     }
-    .group-hebergements1{
+    .group-hebergements1, .group-hebergements2{
         display: flex;
         flex-wrap: wrap;
         justify-content:space-around;
         margin-bottom: 28px;
     }
-    .group-hebergements2{
+    .group-hebergements1 a, .group-hebergements2 a{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        
-    }
-    .group-hebergements1 a{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 31%;
-        height: 147px;
-        margin-top: 20px;
-        padding-top: 4px;
-        background-color: white;
-        border-radius: 13px;
-        text-align: left;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        position: relative;
-    }
-    .group-hebergements2 a{
-        display: flex;
-        flex-direction: row;
-        width: 265px;
-        margin-top: 20px;
         background-color: white;
         border-radius: 13px;
         text-align: left;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         position: relative;
     }
+    .group-hebergements1 a{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 31%;
+        height: 147px;
+        margin-top: 20px;
+        padding-top: 4px;
+    }
+    .group-hebergements2 a{
+        flex-direction: row;
+        width: 265px;
+        margin-top: 20px;
+    }
     .group-hebergements1 img{
+        width: 96%;
         margin: 0 auto;
         border-radius: 10px; 
-        max-height: 100px;
-        width: 96%;
+        height: 100px;
     }
     .group-hebergements2 img{
         width: 48%;    
@@ -236,27 +234,24 @@ section{
         height: 110px;
         padding: 4px;
     }
-    .group-hebergements1 figcaption{
+    .group-hebergements1 figcaption, .group-hebergements2 figcaption{
         display: flex;
         flex-direction: column;
         justify-content: start;
+        background-color: white;
+        position: absolute;
+    }
+    .group-hebergements1 figcaption{
         padding: 10px;
         border-radius: 0 0 10px 10px;
-        background-color: white;
-        position: absolute;
-        bottom: 0;
         width: 100%;
+        bottom: 0;
     }
     .group-hebergements2 figcaption{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
         padding: 11px 15px;
         border-radius: 0 10px 10px 0;
-        background-color: white;
         width: 60%;
         height: 100%;
-        position: absolute;
         right:0;  
     }
     .group-hebergements1 figcaption span{
@@ -272,7 +267,7 @@ section{
     display: flex;
     flex-direction: column;
 }
-#section3-activites article{
+#section3-activites aside{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -281,7 +276,7 @@ section{
     height: 335px;
     margin-top: 15px;
 }
-#section3-activites article a{
+#section3-activites aside a{
     display: flex;
     align-items: flex-end;
     width: 22.5%;
@@ -291,7 +286,7 @@ section{
     position: relative;
     overflow: hidden;
 }
-#section3-activites article p{
+#section3-activites aside p{
     font-size: 0.9em;
     font-weight: bold;
     background-color: white;
@@ -302,7 +297,7 @@ section{
     width: 100%;
     
 }
-#section3-activites article a img {
+#section3-activites aside a img {
     width: 160%;
     height: 100%;
 }
@@ -372,7 +367,7 @@ footer a{
     .group-hebergements1 a, .group-hebergements2 a{
         margin-top: 10px;
     }
-    #section3-activites article {
+    #section3-activites aside {
         flex-direction: row;
         justify-content: space-around;
         height: auto;
@@ -387,7 +382,7 @@ footer a{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         position: relative;
     }
-    #section3-activites article img:nth-child(n){
+    #section3-activites aside img:nth-child(n){
         width: 100%;
     }
 }
@@ -397,7 +392,7 @@ footer a{
         flex-direction: column;
         align-items: flex-start;
     }
-    #titre-filtre, .filtres{margin-bottom: 10px;}
+    #titre-filtre, .bloc-icones-filtre button{margin-bottom: 10px;}
 
     /* Sections */
     section{
@@ -423,7 +418,7 @@ footer a{
     .sous-section2-hebergements:nth-child(2){
         width: 100%;
     }
-    .group-hebergements1, .group-hebergements2, #section3-activites article{
+    .group-hebergements1, .group-hebergements2, #section3-activites aside{
         justify-content: center;
     }
     .group-hebergements1 a, .group-hebergements2 a{
