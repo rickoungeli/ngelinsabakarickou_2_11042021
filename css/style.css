@@ -109,13 +109,14 @@ label{
     padding: 12px 6px;
     border-radius: 14px;
     display: none;
-    border:none;
     margin-left: -10px;
     font-weight: 200;
     background-color: #0065FC;
+    border: none;
 }
 #searchbtn1 span{
     margin: 0;
+    background-color: #0065FC;
 }
 #searchbtn1 i{
     color: #fff;
@@ -168,7 +169,6 @@ label{
 .icone-filtre i, #icone-info i{
     color: #0065FC;
 }
-
 
 /* Sections */
 section{
@@ -252,6 +252,8 @@ section{
         border-radius: 0 10px 10px 0;
         width: 60%;
         height: 100%;
+        position: absolute;
+        top:0;
         right:0;  
     }
     .group-hebergements1 figcaption span{
@@ -262,7 +264,6 @@ section{
         margin-top: 39px;
         font-size: 0.65em;
     }
-
 #section3-activites{
     display: flex;
     flex-direction: column;
@@ -295,7 +296,6 @@ section{
     position: absolute;
     bottom: 0;
     width: 100%;
-    
 }
 #section3-activites aside a img {
     width: 160%;
@@ -436,18 +436,16 @@ footer a{
 }
 
 @media(max-width: 410px){
-    
     #section1,
     #section2-hebergements,
     #section3-activites{
         width: 100%;
     }
-
     #searchbtn{
         display :none;
     }
     #searchbtn1{
-        display:inline;
+        display:block;
     }
     .group-hebergements1 a, .group-hebergements2 a, #section3-activites a:nth-child(n){
         width: 100%;
