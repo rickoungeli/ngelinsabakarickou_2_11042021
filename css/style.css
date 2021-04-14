@@ -28,8 +28,9 @@ a {
     text-decoration: none;
     font-weight: 700;
     font-size: 0.7em;
+    color:black;
 }
-a:visited{color: #0065FC;}
+a:visited{color: black;}
 /* Mes couleurs */
 .perso-couleur1 {color: #0065FC;}
 .perso-couleur2 {color: #f2f2f2FC;}
@@ -68,7 +69,6 @@ header{
 .lien:visited {
     color: #0065FC;
 }
-
 /* Formulaire de recherche */
 form{
     display: flex;
@@ -349,6 +349,10 @@ footer a{
     color:black;
     
 }
+.hebergements_populaires .figcaption span{
+    position:absolute ;
+    bottom: 15px;
+}
 @media(max-width: 1060px){
     body{width: 100%;}
     section{
@@ -399,7 +403,7 @@ footer a{
         justify-content: center;
         height: auto;
     }
-
+    
 
     .hebergements_marseille, .hebergements_populaires{
         justify-content: center;
@@ -463,10 +467,7 @@ footer a{
     #searchbtn1{
         display:block;
     }
-    .hebergements_populaires .figcaption span{
-        position:absolute ;
-        bottom: 15px;
-    }
+    
     section h3, .section3 p {font-size: 1.3em;}
     .section1 p {font-size: 0.8em;}
     .section1,
